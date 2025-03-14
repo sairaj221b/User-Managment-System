@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+</head>
+<body>
+    <h1>User Management System</h1>
+
+    
+
+    <!-- Add User Form -->
+    <h2>Add User</h2>
+    <form action="/" method="POST">
+        <input type="text" placeholder="User Unique ID" name="userUniqueId" required>
+        <input type="text" placeholder="User Name" name="userName" required>
+        <input type="email" placeholder="User Email" name="userEmail" required>
+        <input type="number" placeholder="User Age" name="userAge" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Update User Form -->
+    <h2>Update User</h2>
+    <form action="/update" method="POST">
+        <input type="text" placeholder="User Unique ID" name="userUniqueId" required>
+        <input type="text" placeholder="User Name" name="userName">
+        <input type="email" placeholder="User Email" name="userEmail">
+        <input type="number" placeholder="User Age" name="userAge">
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
